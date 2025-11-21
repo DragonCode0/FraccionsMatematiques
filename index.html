@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fraccions - Exercicis de Matemàtiques</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Capçalera -->
+        <header class="header">
+            <h1>Exercicis de Fraccions</h1>
+            <p>De normal primer surt el numerador per que surti el denominador tindras que premer el tabulador.</p>
+            <p>Practica suma, resta, multiplicació i divisió</p>
+            <p>Es recomana utilitzar un paper per fer els problemes.</p>
+        </header>
+
+        <!-- Seleccionar nivell -->
+        <section class="level-selector" id="levelSelector">
+            <h2>Selecciona un nivell</h2>
+            <div class="level-buttons">
+                <button class="level-btn easy" data-level="facil">
+                    <span class="emoji">🟢</span>
+                    <span>Fàcil</span>
+                    <small>(Denominadors 2-5)</small>
+                </button>
+                <button class="level-btn medium" data-level="mitja">
+                    <span class="emoji">🟡</span>
+                    <span>Mitjà</span>
+                    <small>(Denominadors 2-10)</small>
+                </button>
+                <button class="level-btn hard" data-level="dificil">
+                    <span class="emoji">🔴</span>
+                    <span>Difícil</span>
+                    <small>(Denominadors 2-20)</small>
+                </button>
+            </div>
+        </section>
+
+        <!-- Exercicis -->
+        <section class="exercises" id="exercisesSection" style="display: none;">
+            <div class="exercises-header">
+                <h2 id="exerciseTitle">Exercicis - Nivell Fàcil</h2>
+                <button class="back-btn" id="backBtn">← Enrere</button>
+            </div>
+
+            <div class="exercise-tabs">
+                <button class="tab-btn active" data-operation="suma">➕ Suma</button>
+                <button class="tab-btn" data-operation="resta">➖ Resta</button>
+                <button class="tab-btn" data-operation="multiplicacio">✖️ Multiplicació</button>
+                <button class="tab-btn" data-operation="divisio">➗ Divisió</button>
+                
+            </div>
+
+            <div class="exercises-list" id="exercisesList"></div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
